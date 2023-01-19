@@ -1,9 +1,14 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+/* eslint-disable linebreak-style */
+/* eslint-disable import/no-unresolved */
+
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: {
-    index: './src/index.js',
+  mode: 'development',
+  entry: './src/index.js',
+  devServer: {
+    static: './dist',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -11,9 +16,14 @@ module.exports = {
     }),
   ],
   output: {
-    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    filename: '[name].[hash:8].js',
+    sourceMapFilename: '[name].[hash:8].map',
+    chunkFilename: '[id].[hash:8].js',
     clean: true,
+  },
+  optimization: {
+    runtimeChunk: 'single',
   },
   module: {
     rules: [
@@ -22,11 +32,5 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
     ],
-  },
-  devServer: {
-    static: './dist',
-  },
-  optimization: {
-    runtimeChunk: 'single',
   },
 };
