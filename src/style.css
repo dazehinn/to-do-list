@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;
+  background-color: #efe;
+}
+
+.todo {
+  width: 375px;
+  background-color: #fff;
+}
+
+.todoli {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+
+input {
+  margin-right: 15px;
+}
