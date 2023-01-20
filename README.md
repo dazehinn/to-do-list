@@ -76,19 +76,21 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-- git (for version control)
+- git bash
 - web browser
+- node.js
 Have text editor installed. (VSCode, sublime, atom)
 - (optional) Have CSS,HTML & JS Linters installed and configured. For further information, visit [this link](https://github.com/microverseinc/linters-config/blob/master/README.md) to get better understanding on each linters used on this project.
 
 ### Setup
 
 * Clone this repository to your desired folder
-* open the index.html file using a web browser
+* open this repository and run git bash 
+* run `npm install` to install the dev dependencies
 
 
 ### Usage
-Coming soon...
+* run `npm run start` to start the project
 
 ### Deployment
 

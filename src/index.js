@@ -39,14 +39,11 @@ const tasks = [
   },
 ];
 
-const todoTitle = document.createElement('ii');
 const todoInstr = document.createElement('ii');
-todoTitle.textContent = 'Today\'s To Do';
 todoInstr.textContent = 'Add to your list...';
-todoTitle.classList.add('todoli');
 todoInstr.classList.add('todoli');
 todoInstr.style.fontStyle = 'italic';
-ToD.append(todoTitle, todoInstr);
+ToD.append(todoInstr);
 
 function populateListItem() {
   tasks.sort((a, b) => (a.index - b.index));
