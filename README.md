@@ -89,7 +89,7 @@ Have text editor installed. (VSCode, sublime, atom)
 * run `npm install` to install the dev dependencies
 
 
-### Usage
+                                                                                                                                                  0### Usage
 * run `npm run start` to start the project
 
 ### Deployment
