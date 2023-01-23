@@ -8,6 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   padding: 10px;
   background-color: #efe;
@@ -25,5 +26,41 @@ body {
 }
 
 input {
+  background: url('enter_icon.png') right no-repeat;
+  background-size: 50px;
   margin-right: 15px;
+}
+
+img {
+  width: 40px;
+}
+
+button {
+  width: 375px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 1px 2px 2px 0.2px rgba(0, 0, 0, 0.2);
+}
+
+.trash {
+  width: 15px;
+  float: right;
+  cursor: pointer;
+}
+
+.inline {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  width: 375px;
+}
+
+input.inline {
+  font-style: italic;
+}
+
+.trash-icon {
+  display: none;
 }

@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List</title>
+    <!--
+    <script src="index.js" defer type="module"></script>
+    <link rel="stylesheet" href="style.css"> -->
+    
 </head>
 <body>
-  <ul class="todo">
-    <li style="display: block;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 15px; width: 375px;">Today's To Do</li>
-  </ul>
+  <div class="todo">
+    <li class="inline">Today's To Do</li>
+    <input class="todoInstr inline" placeholder="Add to your list.">
+    <img class="trash-icon" src="trash_icon.png" alt="">
+  </div>
+  <button class="removeTasks todoli">Clear All Completed</button>
 </body>
 </html
