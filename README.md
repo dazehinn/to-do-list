@@ -47,6 +47,7 @@
     <li>HTML</li>
     <li>CSS</li>
     <li> JS </li>
+<li>webpack</li>
   </ul>
 </details>
 
@@ -54,8 +55,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Add button]**
-- **[Remove button]**
+- **[Add task to ToDo list]**
+- **[Remove task from ToDo list]**
+- **[Edit the task description]**
+- **[Remove all completed tasks from ToDo list]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -121,7 +124,7 @@ You can deploy this project using Github pages
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[Desktop Version]**
+- [ ] **[Desktop version]**
 - [ ] **[Transitions and animations]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
