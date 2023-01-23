@@ -1,8 +1,8 @@
-import Icon from './trash_icon.png'
+import Icon from './trash_icon.png';
+
 const tasksArray = JSON.parse(localStorage.getItem('tasks')) || [];
 const newTask = document.querySelector('.todoInstr');
 const ToD = document.querySelector('.todo');
-const trashIcon = document.querySelector('.trash-icon');
 
 function addItem() {
   const itemdiv = document.createElement('div');
