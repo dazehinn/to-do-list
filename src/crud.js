@@ -1,7 +1,8 @@
+import Icon from './trash_icon.png';
+
 const tasksArray = JSON.parse(localStorage.getItem('tasks')) || [];
 const newTask = document.querySelector('.todoInstr');
 const ToD = document.querySelector('.todo');
-const trashIcon = document.querySelector('.trash-icon');
 
 function addItem() {
   const itemdiv = document.createElement('div');
@@ -11,7 +12,7 @@ function addItem() {
   item.textContent = tasksArray[tasksArray.length - 1].description;
   itemdiv.classList.add('todoli');
   trash.classList.add('trash');
-  trash.src = trashIcon.src;
+  trash.src = Icon;
   checkbox.type = 'checkbox';
   checkbox.contentEditable = true;
   checkbox.checked = tasksArray[tasksArray.length - 1].completed;
@@ -29,7 +30,7 @@ const populateListItem = () => {
     const trash = document.createElement('img');
     item.id = tasksArray[i].index;
     const checkbox = document.createElement('input');
-    trash.src = trashIcon.src;
+    trash.src = Icon;
     trash.classList.add('trash');
     item.textContent = tasksArray[i].description;
     itemdiv.classList.add('todoli');
