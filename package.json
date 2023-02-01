@@ -713,11 +713,13 @@
     "zwitch": "^1.0.5"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.20.11",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.27.5",
-    "html-webpack-plugin": "^5.5.0"
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.4.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
